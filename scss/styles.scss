@@ -5,5 +5,35 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 body {
-  background-color: orange;
+  background-image: url('../images/bg.jpg');
+  background-position: 100%;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.header-box {
+  .header-img {
+    border: solid 5px white;
+    background: url('../images/top-image.png') no-repeat center -100px;
+    background-size: cover;
+    position: relative;
+    height: 336px;
+  }
+
+  .logo {
+    position: relative;
+    padding-top: 50px;
+  }
+
+}
+.header-img::before{
+  content: "";
+  background-image: url('../images/grid.png');
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
