@@ -13,6 +13,15 @@ body {
   float: right !important;
 }
 
+.nav-buttons {
+  a {
+    background-color: #AA2429;
+    border-radius: 0;
+    /*color: #AA2429;*/
+    font-size: 18px;
+  }
+}
+
 .header-box {
   .header-img {
     border: solid 5px white;
@@ -36,4 +45,13 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+.article-box {
+  margin-top: 65px;
+}
+
+.article {
+  height: 350px;
+  background-color: #FEFEFE;
 }
