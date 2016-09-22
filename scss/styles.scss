@@ -7,6 +7,45 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 body {
   background-image: url('../images/bg.jpg');
   background-position: 100%;
+
+}
+
+body::before {
+  content: "";
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.border-style {
+  box-shadow: 0px 4px rgba(0, 0, 0, .3);
+}
+
+.row {
+  margin-bottom: 30px;
+}
+
+.fb {
+  background-color: #3B4E8C;
+}
+.rss {
+  background-color: #C5852C;
+}
+.twt {
+  background-color: #5F82C0;
+}
+.yt {
+  background-color: #A93128;
+}
+.social-nav a {
+  color: white;
+}
+
+.sub {
+  text-align: center;
 }
 
 .pull-right {
@@ -17,7 +56,7 @@ body {
   a {
     background-color: #AA2429;
     border-radius: 0;
-    /*color: #AA2429;*/
+    color: white;
     font-size: 18px;
   }
 }
@@ -71,7 +110,7 @@ body {
     font-size: 12px;
   }
 
-   a {
+   h4 {
     color: #AA2429;
   }
 
@@ -98,11 +137,13 @@ body {
   height: 222px;
   border: solid 5px white;
   position: relative;
+  margin-bottom: 10px;
 }
 .rodney {
   background: url('../images/sk8er-3.png') no-repeat center center;
   height: 222px;
   border: solid 5px white;
+  margin-bottom: 10px;
 }
 .tommy {
   background: url('../images/sk8er-2.png') no-repeat -340px center;
@@ -114,4 +155,123 @@ body {
   height: 222px;
   border: solid 5px white;
   background-size: cover;
+}
+.photos-left {
+  padding-left: 0px;
+}
+
+.base h5 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15px;
+}
+.base {
+  background: #AA2429;
+  display: inline-block;
+  height: 75px;
+  box-shadow: 0px 4px rgba(0, 0, 0, .3);
+  top: 0;
+  left: 0;
+  position: relative;
+  width: 150px;
+}
+.base:before {
+  border-left: 35px solid #AA2429;
+  border-top: 38px solid transparent;
+  border-bottom: 38px solid transparent;
+  content: "";
+  height: 0;
+  left: 150px;
+  position: absolute;
+  right: 35px;
+  width: 25px;
+}
+
+/* SKATE BOARDS */
+
+.ska8brd {
+  text-align: center;
+}
+
+.sk8brds {
+  background-color: white;
+  word-spacing: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+  height: 361px;
+  background-color: white;
+}
+
+.bot-social1 {
+  background-color: #464546;
+}
+
+.bot-social2 {
+  background-color: #A5A4A5;
+}
+
+.bot-social3 {
+  background-color: #707070;
+}
+
+.bot-icon {
+  color: #939293;
+}
+
+.name-box .email-box .text-box {
+  box-shadow: -3px -4px rgba(0, 0, 0, .3);
+  border-radius: 0px;
+}
+
+.user-input button {
+  border-radius: 0px;
+  background-color: #AA2429;
+  width: 240px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .sn-container {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .nb-container {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .article-container1 {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .article-container3 {
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sk8brds img {
+    transform: rotatez(90deg);
+    margin-left: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    height: 550px;
+  }
+
 }
